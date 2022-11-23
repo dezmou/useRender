@@ -55,7 +55,7 @@ function LeftMenu() {
   </>
 }
 
-// Then somewere in your code, chande the global state
+// Then somewere in your code, change the global state
 state.someValue = 1
 // Render the component you want
 render("LeftMenu")
