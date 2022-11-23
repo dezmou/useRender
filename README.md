@@ -6,7 +6,7 @@
 ## You know what ? just give me a render() function and I'll be fine
 
 ```tsx
-import { useRender } from './render';
+import { useRender } from './useRender';
 
 // Create your global state a simple as a damn object
 const state = {
@@ -38,7 +38,7 @@ function LeftMenu() {
 ## Want to render some component from anywhere in your app ? 
 
 ```tsx 
-import { render, useRender } from './render';
+import { render, useRender } from './useRender';
 
 const state = {
   someValue: 0,
