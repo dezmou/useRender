@@ -16,10 +16,13 @@ function LeftMenu() {
   return <>
     {state.buttonClicked}<br />
     <button onClick={() => {
+      
       // change some of your global state values
       state.buttonClicked += 1;
+      
       // Manual render !
       render()
+      
     }}>click me</button>
   </>
 }
