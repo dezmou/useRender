@@ -1,6 +1,7 @@
 # React useRender
 
-## Did you ever say : ok react, I'm fed up with all these asynchronous setState, redux, context and company to update the reactive variables in the html, just give me a render() function and I'll be fine
+## Did you ever say : ok react, I'm fed up with all these asynchronous setState, redux, context and company to update the reactive variables in the html.
+## You know what ? just give me a render() function and I'll be fine
 
 ```tsx
 import {useRender } from './render';
