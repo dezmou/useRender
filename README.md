@@ -2,7 +2,7 @@
 
 ## Did you ever say : ok react, I'm fed up with all these asynchronous setState, redux, context and company to update the reactive variables in the html, just give me a render() function and I'll be fine
 
-```jsx
+```tsx
 // Create your global state a simple as a damn object
 const state = {
   buttonClicked: 0,
