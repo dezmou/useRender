@@ -1,10 +1,12 @@
 # React useRender
 
-## Did you ever say : ok react, I'm fed up with all these asynchronous setState, redux, context and company to update the reactive variables in the html.
+## Did you ever tell yourself : ok react, I'm fed up with all these asynchronous setState, redux, context and company to update the reactive variables in the html.
+
+
 ## You know what ? just give me a render() function and I'll be fine
 
 ```tsx
-import {useRender } from './render';
+import { useRender } from './render';
 
 // Create your global state a simple as a damn object
 const state = {
@@ -29,5 +31,34 @@ function LeftMenu() {
     }}>click me</button>
   </>
 }
+
+```
+
+
+## Want to render some component from anywhere in your app ? 
+
+```tsx 
+import { render, useRender } from './render';
+
+const state = {
+  someValue: 0,
+}
+
+// Use the state in some component
+function LeftMenu() {
+  
+  // register LeftMenu for render call outside the component
+  useRender("LeftMenu")
+  
+  return <>
+    {state.someValue}
+  </>
+}
+
+// Then somewere in your code, chande the global state
+state.someValue = 1
+// Render the component you want
+render("LeftMenu")
+
 
 ```
