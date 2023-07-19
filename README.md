@@ -3,7 +3,7 @@
 ## Did you ever tell yourself : ok react, I'm fed up with all these asynchronous setState, redux, context, prop drilling and company to update the reactive variables in the html.
 
 
-## You know what ? just give me a render() function to tell the component that is should update and I will be fine.
+## You know what ? just give me a render() function to tell the component that it should update and I will be fine.
 
 ```tsx
 import { useRender } from './useRender';
